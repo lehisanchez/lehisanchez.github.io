@@ -3,48 +3,78 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Lehi Sanchez is a portrait photographer based in La Plata, Maryland.">
+	  <meta name="description" content="Lehi Sanchez is a portrait photographer based in La Plata, Maryland.">
     <title>Lehi Sanchez | Photographer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <link rel="stylesheet" href="css/base.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-4413074-36"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+    
+  	<!-- Global site tag (gtag.js) - Google Analytics -->
+  	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-4413074-36"></script>
+  	<script>
+  	  window.dataLayer = window.dataLayer || [];
+  	  function gtag(){dataLayer.push(arguments);}
+  	  gtag('js', new Date());
 
-	  gtag('config', 'UA-4413074-36');
-	</script>
+  	  gtag('config', 'UA-4413074-36');
+  	</script>
 	
   </head>
   <body>
-	  <section class="hero is-dark is-fullheight">
+	  <section class="hero is-dark is-fullheight" id="main">
 	    <div class="hero-body">
 	      <div class="container">
 	        <h1 class="title">
 	          Lehi Sanchez
 	        </h1>
 	        <h2 class="subtitle">
-	          Photographer
+	          Portrait Photographer
 	        </h2>
 
-			<p class="field">
-			  <a class="button" href="https://facebook.com/lehisanchezphotography">
-			    <span class="icon">
-			      <i class="fab fa-facebook-square"></i>
-			    </span>
-			    <span>Facebook</span>
-			  </a>
-			  <a class="button" href="https://instagram.com/lehisanchezphotography">
-			    <span class="icon">
-			      <i class="fab fa-instagram"></i>
-			    </span>
-			    <span>Instagram</span>
-			  </a>
-			</p>
+          <p class="field">
+            <a class="button is-small" href="https://instagram.com/lehisanchezphotography">
+              <span class="icon is-small">
+                <i class="fab fa-instagram"></i>
+              </span>
+              <span>Instagram</span>
+            </a>
+            <a class="button is-small" href="https://facebook.com/LehiSanchezPhotography">
+              <span class="icon is-small">
+                <i class="fab fa-facebook"></i>
+              </span>
+              <span>Facebook</span>
+            </a>
+          </p>
 	      </div>
 	    </div>
 	  </section>
+    
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function () {
+
+        // Get all "navbar-burger" elements
+        var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+
+          // Add a click event on each of them
+          $navbarBurgers.forEach(function ($el) {
+            $el.addEventListener('click', function () {
+
+              // Get the target from the "data-target" attribute
+              var target = $el.dataset.target;
+              var $target = document.getElementById(target);
+
+              // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+              $el.classList.toggle('is-active');
+              $target.classList.toggle('is-active');
+
+            });
+          });
+        }
+
+      });
+    </script>
   </body>
 </html>
