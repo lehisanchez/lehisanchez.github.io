@@ -1,0 +1,13 @@
+title: "Lehi Sanchez"
+domain: lehisanchez.com
+url: "https://lehisanchez.com"
+baseurl: ""
+
+source: _site
+destination: docs
+disable_disk_cache: true
+
+plugins:
+  - jekyll-postcss
+postcss:
+  cache: false
