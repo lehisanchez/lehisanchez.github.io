@@ -6,7 +6,9 @@
     <title>{{ site.title }} {% unless page.title == "Home" %} | {{ page.title }} {% endunless %}</title>
     <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">
   </head>
-  <body>
-    {{ content }}
+  <body class="text-white bg-slate-800">
+    <div class="flex flex-col p-5">
+      {{ content }}
+    </div>
   </body>
 </html>

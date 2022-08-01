@@ -1,11 +1,11 @@
 module.exports = {
   content: [
-    './source/_drafts/**/*.html',
-    './source/_includes/**/*.html',
-    './source/_layouts/**/*.html',
-    './source/_posts/*.md',
-    './source/*.md',
-    './source/*.html',
+    './_site/_drafts/**/*.html',
+    './_site/_includes/**/*.html',
+    './_site/_layouts/**/*.html',
+    './_site/_posts/*.md',
+    './_site/*.md',
+    './_site/*.html',
   ],
   theme: {
     theme: {
