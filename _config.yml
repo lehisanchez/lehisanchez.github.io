@@ -8,7 +8,11 @@ destination: docs
 disable_disk_cache: true
 
 plugins:
+  - jekyll-feed
   - jekyll-postcss
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
 postcss:
   cache: false
 
@@ -16,3 +20,8 @@ include:
   - CNAME
 keep_files:
   - CNAME
+
+social:
+  name: Lehi Sanchez
+  links:
+    - https://github.com/lehisanchez
